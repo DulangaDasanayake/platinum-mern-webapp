@@ -11,12 +11,13 @@
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Dulanga Dasanayake",
-  "license": "MIT", 
+  "license": "MIT",
   "dependencies": {
     "express": "^4.19.2"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
+    "dotenv": "^16.4.5",
     "nodemon": "^3.1.0"
   }
 }
