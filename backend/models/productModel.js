@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const reviewSchema = (mongoose = mongoose.Schema(
+const reviewSchema = mongoose.Schema(
   {
     user: {
       type: mongoose.Schema.Types.ObjectId,
@@ -23,7 +23,7 @@ const reviewSchema = (mongoose = mongoose.Schema(
   {
     timestamps: true,
   }
-));
+);
 
 const productSchema = new mongoose.Schema(
   {
