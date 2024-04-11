@@ -18,7 +18,7 @@ Welcome to ProShop! This is a full-stack e-commerce application built with the M
 - **Backend**: Node.js, Express.js, MongoDB (with Mongoose ODM)
 - **Authentication**: JSON Web Tokens (JWT)
 - **Payment Integration**: PayPal API
-- **Deployment**: Heroku (for backend) and Netlify (for frontend)
+- **Deployment**: 
 
 ## Getting Started
 
@@ -63,7 +63,3 @@ Contributions are welcome! If you find any bugs or have suggestions for improvem
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-Special thanks to Brad Traversy for the [MERN eCommerce From Scratch](https://www.udemy.com/course/mern-ecommerce) course, which served as the foundation for this project.
