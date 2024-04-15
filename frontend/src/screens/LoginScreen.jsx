@@ -82,7 +82,7 @@ const LoginScreen = () => {
           New Customer?
           <Link
             to={redirect ? `/register?redirect=${redirect}` : "/register"}
-          ></Link>
+          >Register</Link>
         </Col>
       </Row>
     </FormContainer>
