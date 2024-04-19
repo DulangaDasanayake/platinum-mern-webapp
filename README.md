@@ -1,32 +1,39 @@
 <div align="center">
 
-# MERN SHOP
+# PRO SHOP
 
 Remember to give me your generous ⭐ Thanks you so much !!!
 
-🛒🚀 Full-stack E-commerce web application built with the MERN stack(MongoDB,Express,React & Node), Bootstrap, Firebase Auth, and hosted on Render.com Browse, shop, and checkout with ease!
+Full-stack E-commerce web application built with the MERN stack(MongoDB,Express,React & Node), Bootstrap, Firebase Auth, and hosted on Render.com Browse, shop, and checkout with ease!
 
 </div>
 
-## 📋 Table of Contents
+## Table of Contents
 
-- [🚀 Features](#-features)
-- [🛠️ Technologies Used](#️-technologies-used)
-- [🔧 Installation](#-installation)
-- [💻 Usage](#-usage)
-- [🤝 Contributing](#-contributing)
-- [📝 License](#-license)
+- [Features](#features)
+- [Used Technologies](#used-technologies)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-## 🚀 Features
+## Features
 
-- User authentication and authorization.
-- Browse products by category.
-- Add products to the shopping cart.
-- Update and remove items from the cart.
-- Secure checkout process with payment integration.
-- User profile with order history.
+- Full featured shopping cart
+- Product reviews and ratings
+- Top products carousel
+- Product pagination
+- Product search feature
+- User profile with orders
+- Admin product management
+- Admin user management
+- Admin Order details page
+- Mark orders as delivered option
+- Checkout process (shipping, payment method, etc)
+- PayPal / credit card integration
+- Database seeder (products & users)
 
-## 🛠️ Technologies Used
+## Used Technologies
 
 - **Frontend:**
 
@@ -57,7 +64,7 @@ Remember to give me your generous ⭐ Thanks you so much !!!
   - I'm Sending My Regards for the Render.com for providing free hosting feature.
   - It is so much helpful for teachers and students work with IT Industry.
 
-## 🔧 Installation
+## Installation
 
 1. **Clone the repository:**
 
@@ -80,22 +87,21 @@ Remember to give me your generous ⭐ Thanks you so much !!!
    npm install
    ```
 
-4. **Set up environment variables:** ⚙️
+4. **Set up environment variables:**
 
    Create a `.env` file in the `backend` directory and add the following variables:
 
    ```plaintext
-   NODE_ENV=development
-   PORT=5000
-   MONGO_URI=your mongoDB uri
-   JWT_SECRET='your jwt secret key'
-   PAYPAL_CLIENT_ID=your paypal slient id
-   PAGINATION_LIMIT=8
+   NODE_ENV = development
+   PORT = 5000
+   MONGO_URI = your mongodb uri
+   JWT_SECRET = 'sup3rs3cr3t'
+   PAYPAL_CLIENT_ID = your paypal client id
    ```
 
    Replace `your_mongodb_uri` with your MongoDB connection string and `your_jwt_secret` with a secret key for JWT.
 
-## 💻 Usage
+## Usage
 
 1. **Start the backend server:**
 
@@ -113,7 +119,7 @@ Remember to give me your generous ⭐ Thanks you so much !!!
 
 3. **Open your browser and navigate to `http://localhost:3000` to view the application.**
 
-## 🤝 Contributing
+## Contributing
 
 Contributors are welcome! If you'd like to contribute to this project, please follow these steps:
 
@@ -124,6 +130,6 @@ Contributors are welcome! If you'd like to contribute to this project, please fo
 5. Push to the branch (`git push origin feature/new-feature`).
 6. Create a new Pull Request.
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
