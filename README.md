@@ -1,65 +1,129 @@
-# ProShop
+<div align="center">
 
-Welcome to ProShop! This is a full-stack e-commerce application built with the MERN stack (MongoDB, Express, React, Node.js). ProShop provides a platform for users to browse, search, and purchase a variety of products offered by the store.
+# MERN SHOP
 
-## Features
+Remember to give me your generous ⭐ Thanks you so much !!!
 
-- **User Authentication**: Users can sign up and log in securely to their accounts. Authentication is implemented using JSON Web Tokens (JWT).
-- **Product Listings**: The application displays a wide range of products available for purchase, including details such as product images, descriptions, prices, and ratings.
-- **Product Reviews**: Users can leave reviews and ratings for products they have purchased, providing valuable feedback for other shoppers.
-- **Shopping Cart**: A convenient shopping cart feature allows users to add products to their cart, adjust quantities, and proceed to checkout.
-- **Checkout Process**: Seamless checkout process with integration for payment through PayPal.
-- **Order Management**: Registered users can view their order history and track the status of their orders.
-- **Admin Panel**: Admin users have access to additional functionalities such as managing products, users, orders, and processing payments.
+🛒🚀 Full-stack E-commerce web application built with the MERN stack(MongoDB,Express,React & Node), Bootstrap, Firebase Auth, and hosted on Render.com Browse, shop, and checkout with ease!
 
-## Technologies Used
+</div>
 
-- **Frontend**: React.js, Redux (for state management), React Bootstrap (UI components), Axios (HTTP client)
-- **Backend**: Node.js, Express.js, MongoDB (with Mongoose ODM)
-- **Authentication**: JSON Web Tokens (JWT)
-- **Payment Integration**: PayPal API
-- **Deployment**: 
+## 📋 Table of Contents
 
-## Getting Started
+- [🚀 Features](#-features)
+- [🛠️ Technologies Used](#️-technologies-used)
+- [🔧 Installation](#-installation)
+- [💻 Usage](#-usage)
+- [🤝 Contributing](#-contributing)
+- [📝 License](#-license)
 
-To run ProShop locally on your machine, follow these steps:
+## 🚀 Features
 
-1. Clone the repository:
+- User authentication and authorization.
+- Browse products by category.
+- Add products to the shopping cart.
+- Update and remove items from the cart.
+- Secure checkout process with payment integration.
+- User profile with order history.
 
-   ```
+## 🛠️ Technologies Used
+
+- **Frontend:**
+
+  - React.js
+  - Redux for state management
+  - React Router for navigation
+  - Bootstrap for styling
+
+- **Backend:**
+
+  - Node.js
+  - Express.js for middleware
+  - Mongoose for object modeling
+  - JSON Web Tokens (JWT) for authentication
+
+- **Database** 📊
+
+  - MongoDB for product & user detail storing
+  - Firebase for authentication
+
+- **Authentication:**
+
+  - Firebase Authentication for Google authentication
+
+- **Hosting:**
+  - Render.com for deployment and hosting
+  - Web App Demo Link:
+  - I'm Sending My Regards for the Render.com for providing free hosting feature.
+  - It is so much helpful for teachers and students work with IT Industry.
+
+## 🔧 Installation
+
+1. **Clone the repository:**
+
+   ```bash
    git clone https://github.com/DulangaDasanayake/proshop.git
    ```
 
-2. Install dependencies:
+2. **Navigate to the project directory:**
 
-   ```
+   ```bash
    cd proshop
+   ```
+
+3. **Install dependencies for both frontend and backend:**
+
+   ```bash
+   cd client
    npm install
+   cd ..
+   npm install
+   ```
+
+4. **Set up environment variables:** ⚙️
+
+   Create a `.env` file in the `backend` directory and add the following variables:
+
+   ```plaintext
+   NODE_ENV=development
+   PORT=5000
+   MONGO_URI=your mongoDB uri
+   JWT_SECRET='your jwt secret key'
+   PAYPAL_CLIENT_ID=your paypal slient id
+   PAGINATION_LIMIT=8
+   ```
+
+   Replace `your_mongodb_uri` with your MongoDB connection string and `your_jwt_secret` with a secret key for JWT.
+
+## 💻 Usage
+
+1. **Start the backend server:**
+
+   ```bash
+   cd backend
+   npm start
+   ```
+
+2. **Start the frontend development server:**
+
+   ```bash
    cd frontend
-   npm install
+   npm start
    ```
 
-3. Set up environment variables:
-   - Create a `.env` file in the root directory (`proshop`) and add the necessary environment variables. Refer to the `.env.sample` file for the required variables.
+3. **Open your browser and navigate to `http://localhost:3000` to view the application.**
 
-4. Start the backend server:
+## 🤝 Contributing
 
-   ```
-   npm run server
-   ```
+Contributors are welcome! If you'd like to contribute to this project, please follow these steps:
 
-5. Start the frontend:
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/new-feature`).
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add new feature'`).
+5. Push to the branch (`git push origin feature/new-feature`).
+6. Create a new Pull Request.
 
-   ```
-   npm run client
-   ```
-
-6. Open your browser and navigate to `http://localhost:3000` to view the application.
-
-## Contributing
-
-Contributions are welcome! If you find any bugs or have suggestions for improvements, feel free to open an issue or submit a pull request.
-
-## License
+## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
