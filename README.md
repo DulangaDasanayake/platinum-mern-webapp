@@ -69,13 +69,13 @@ Full-stack E-commerce web application built with the MERN stack(MongoDB,Express,
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/DulangaDasanayake/proshop.git
+   git clone https://github.com/DulangaDasanayake/novamart.git
    ```
 
 2. **Navigate to the project directory:**
 
    ```bash
-   cd proshop
+   cd novamart
    ```
 
 3. **Install dependencies for both frontend and backend:**
