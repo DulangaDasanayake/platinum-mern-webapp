@@ -1,12 +1,8 @@
-<div align="center">
+# NovaMart - [MERN Stack]
 
-# PRO SHOP
+Remember to give me your generous ⭐ Thanks you so very much !!!
 
-Remember to give me your generous ⭐ Thanks you so much !!!
-
-Full-stack E-commerce web application built with the MERN stack(MongoDB,Express,React & Node), Bootstrap, Firebase Auth, and hosted on Render.com Browse, shop, and checkout with ease!
-
-</div>
+Full-stack E-commerce web application built with the MERN stack(MongoDB,Express,React & Node), Bootstrap, Redux toolkit and hosted on Render.com Browse, shop, and checkout with ease! Stay alert for updates..
 
 ## Table of Contents
 
@@ -17,30 +13,30 @@ Full-stack E-commerce web application built with the MERN stack(MongoDB,Express,
 - [Contributing](#contributing)
 - [License](#license)
 
-## Features
+### Features
 
-- Full featured shopping cart
-- Product reviews and ratings
-- Top products carousel
-- Product pagination
-- Product search feature
-- User profile with orders
-- Admin product management
-- Admin user management
-- Admin Order details page
-- Mark orders as delivered option
-- Checkout process (shipping, payment method, etc)
-- PayPal / credit card integration
-- Database seeder (products & users)
+✔️ Full featured shopping cart
+✔️ Product reviews and ratings system
+✔️ Top products carousel on main page
+✔️ Product pagination
+✔️ Product search feature
+✔️ User profile with orders
+✔️ Admin product management
+✔️ Admin user management
+✔️ Admin Order details page
+✔️ Mark orders as delivered option
+✔️ Checkout process (shipping, payment method, etc)
+✔️ PayPal / credit card integration
+✔️ Database seeder (products & users)
 
-## Used Technologies
+### Used Technologies
 
 - **Frontend:**
 
   - React.js
   - Redux for state management
   - React Router for navigation
-  - Bootstrap for styling
+  - Bootstrap for css styling
 
 - **Backend:**
 
@@ -49,22 +45,21 @@ Full-stack E-commerce web application built with the MERN stack(MongoDB,Express,
   - Mongoose for object modeling
   - JSON Web Tokens (JWT) for authentication
 
-- **Database** 📊
+- **Database**
 
-  - MongoDB for product & user detail storing
-  - Firebase for authentication
+  - MongoDB for product & user detail storing.
 
-- **Authentication:**
+- **Payment**
 
-  - Firebase Authentication for Google authentication
+  - Paypal & Card payment methods are available.
 
 - **Hosting:**
-  - Render.com for deployment and hosting
-  - Web App Demo Link:
-  - I'm Sending My Regards for the Render.com for providing free hosting feature.
-  - It is so much helpful for teachers and students work with IT Industry.
 
-## Installation
+  - Render.com for deployment and hosting
+  - Web App Demo Link: not yet hosted;
+  - I'm Sending My Regards for the Render.com for providing free hosting feature.
+
+### Installation
 
 1. **Clone the repository:**
 
@@ -89,19 +84,18 @@ Full-stack E-commerce web application built with the MERN stack(MongoDB,Express,
 
 4. **Set up environment variables:**
 
-   Create a `.env` file in the `backend` directory and add the following variables:
+   Rename the `.env.example` file in the `root` directory and add the following variables:
+   Replace `your_mongodb_uri` with your MongoDB connection string and `your_jwt_secret` with a secret key for JWT.
 
-   ```plaintext
+   ```bash
    NODE_ENV = development
    PORT = 5000
    MONGO_URI = your mongodb uri
-   JWT_SECRET = 'sup3rs3cr3t'
+   JWT_SECRET = your jwt secret key
    PAYPAL_CLIENT_ID = your paypal client id
    ```
 
-   Replace `your_mongodb_uri` with your MongoDB connection string and `your_jwt_secret` with a secret key for JWT.
-
-## Usage
+### Usage
 
 1. **Start the backend server:**
 
@@ -117,11 +111,18 @@ Full-stack E-commerce web application built with the MERN stack(MongoDB,Express,
    npm start
    ```
 
-3. **Open your browser and navigate to `http://localhost:3000` to view the application.**
+3. **Start both backend & frontend**
 
-## Contributing
+   ```bash
+   cd novamart
+   npm run dev
+   ```
 
-Contributors are welcome! If you'd like to contribute to this project, please follow these steps:
+4. **Open your browser and navigate to `http://localhost:3000` to view the application.**
+
+### Contributing
+
+Contributors are warmly welcome! If you'd like to contribute to this project, please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature/new-feature`).
@@ -130,6 +131,11 @@ Contributors are welcome! If you'd like to contribute to this project, please fo
 5. Push to the branch (`git push origin feature/new-feature`).
 6. Create a new Pull Request.
 
-## License
+### License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+### Thanks Giving ❤️
+
+Thanks for npm package developers, render.com, paypal developers, react developers, node developers, vs code
+vs code extension developers and every each developer that helped me out to finish this project...
