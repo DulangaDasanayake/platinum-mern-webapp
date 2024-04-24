@@ -24,9 +24,9 @@ async function getPayPalAccessToken() {
 
   if (!response.ok) throw new Error('Failed to get access token');
 
-  const json = await response.json();
+  const paypalData = await response.json();
 
-  return json.access_token;
+  return paypalData.access_token;
 }
 
 export async function checkIfNewTransaction(orderModel, paypalTransactionId) {
