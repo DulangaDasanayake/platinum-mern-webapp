@@ -1,17 +1,17 @@
-import { useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
-import { Row, Col, ListGroup, Image, Button, Card } from "react-bootstrap";
-import { toast } from "react-toastify";
-import { useSelector } from "react-redux";
-import { PayPalButtons, usePayPalScriptReducer } from "@paypal/react-paypal-js";
-import Message from "../components/Message";
-import Loader from "../components/Loader";
+import { useEffect } from 'react';
+import { Link, useParams } from 'react-router-dom';
+import { Row, Col, ListGroup, Image, Button, Card } from 'react-bootstrap';
+import { toast } from 'react-toastify';
+import { useSelector } from 'react-redux';
+import { PayPalButtons, usePayPalScriptReducer } from '@paypal/react-paypal-js';
+import Message from '../components/Message';
+import Loader from '../components/Loader';
 import {
   useGetOrderDetailsQuery,
   usePayOrderMutation,
   useGetPayPalClientIdQuery,
   useDeliverOrderMutation,
-} from "../slices/ordersApiSlice";
+} from '../slices/ordersApiSlice';
 
 const OrderScreen = () => {
   const { id: orderId } = useParams();
@@ -42,13 +42,13 @@ const OrderScreen = () => {
     if (!errorPayPal && !loadingPayPal && paypal.clientId) {
       const loadPayPalScript = async () => {
         paypalDispatch({
-          type: "resetOptions",
+          type: 'resetOptions',
           value: {
-            "client-id": paypal.clientId,
-            currency: "USD",
+            'client-id': paypal.clientId,
+            currency: 'USD',
           },
         });
-        paypalDispatch({ type: "setLoadingStatus", value: "pending" });
+        paypalDispatch({ type: 'setLoadingStatus', value: 'pending' });
       };
       if (order && !order.isPaid) {
         if (!window.paypal) {
@@ -63,7 +63,7 @@ const OrderScreen = () => {
       try {
         await payOrder({ orderId, details });
         refetch();
-        toast.success("Payment successful");
+        toast.success('Payment successful');
       } catch (err) {
         toast.error(err?.data?.message || err.message);
       }
@@ -104,13 +104,13 @@ const OrderScreen = () => {
   return isLoading ? (
     <Loader />
   ) : error ? (
-    <Message variant="danger" />
+    <Message variant='danger'>{error.data.message}</Message>
   ) : (
     <>
       <h1>Order {order._id}</h1>
       <Row>
         <Col md={8}>
-          <ListGroup variant="flush">
+          <ListGroup variant='flush'>
             <ListGroup.Item>
               <h2>Shipping</h2>
               <p>
@@ -123,16 +123,16 @@ const OrderScreen = () => {
               </p>
               <p>
                 <strong>Address: </strong>
-                {order.shippingAddress.address}, {order.shippingAddress.city}{" "}
-                {order.shippingAddress.postalCode},{" "}
+                {order.shippingAddress.address}, {order.shippingAddress.city}{' '}
+                {order.shippingAddress.postalCode},{' '}
                 {order.shippingAddress.country}
               </p>
               {order.isDelivered ? (
-                <Message variant="success">
+                <Message variant='success'>
                   Delivered on {order.deliveredAt}
                 </Message>
               ) : (
-                <Message variant="danger">Not Delivered</Message>
+                <Message variant='danger'>Not Delivered</Message>
               )}
             </ListGroup.Item>
 
@@ -143,9 +143,9 @@ const OrderScreen = () => {
                 {order.paymentMethod}
               </p>
               {order.isPaid ? (
-                <Message variant="success">Paid on {order.paidAt}</Message>
+                <Message variant='success'>Paid on {order.paidAt}</Message>
               ) : (
-                <Message variant="danger">Not Paid</Message>
+                <Message variant='danger'>Not Paid</Message>
               )}
             </ListGroup.Item>
 
@@ -171,7 +171,7 @@ const OrderScreen = () => {
         </Col>
         <Col md={4}>
           <Card>
-            <ListGroup variant="flush">
+            <ListGroup variant='flush'>
               <ListGroup.Item>
                 <h2>Order Summery</h2>
               </ListGroup.Item>
@@ -231,8 +231,8 @@ const OrderScreen = () => {
                 !order.isDelivered && (
                   <ListGroup.Item>
                     <Button
-                      type="button"
-                      className="btn btn-block"
+                      type='button'
+                      className='btn btn-block'
                       onClick={deliverHandler}
                     >
                       Mark As Delivered
