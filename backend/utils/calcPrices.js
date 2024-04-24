@@ -10,7 +10,7 @@ function addDecimals(num) {
 export function calcPrices(orderItems) {
   // Calculate the items price
   const itemsPrice = orderItems.reduce(
-    (acc, item) => acc + item.price * item.qty,
+    (acc, item) => acc + (item.price * 100 * item.qty) / 100,
     0
   );
 
