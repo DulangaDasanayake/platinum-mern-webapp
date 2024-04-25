@@ -25,9 +25,9 @@ const OrderListScreen = () => {
               <th>USER</th>
               <th>DATE</th>
               <th>TOTAL</th>
-              <th>PAID</th>
-              <th>DELIVERED</th>
-              <th></th>
+              <th>PAID ON</th>
+              <th>DELIVERED ON</th>
+              <th>DETAILS</th>
             </tr>
           </thead>
           <tbody>

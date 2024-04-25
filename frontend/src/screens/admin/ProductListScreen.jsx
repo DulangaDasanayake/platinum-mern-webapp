@@ -69,7 +69,7 @@ const ProductListScreen = () => {
         <Message variant="danger">{error.data.message}</Message>
       ) : (
         <>
-          <Table stripped hover responsive className="table-sm">
+          <Table stripped bordered hover responsive className="table-sm">
             <thead>
               <tr>
                 <th>ID</th>
@@ -77,7 +77,7 @@ const ProductListScreen = () => {
                 <th>PRICE</th>
                 <th>CATEGORY</th>
                 <th>BRAND</th>
-                <th></th>
+                <th>EDIT/DELETE</th>
               </tr>
             </thead>
             <tbody>
