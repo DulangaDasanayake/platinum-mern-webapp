@@ -22,6 +22,7 @@ import ProductScreen from "./screens/ProductScreen";
 import CartScreen from "./screens/CartScreen";
 import LoginScreen from "./screens/LoginScreen";
 import RegisterScreen from "./screens/RegisterScreen";
+import PrivacyPolicy from "./screens/PrivacyPolicy";
 
 //Private Routes
 import PrivateRoute from "./components/PrivateRoute";
@@ -53,6 +54,7 @@ const router = createBrowserRouter(
       <Route path="/cart/" element={<CartScreen />} />
       <Route path="/login" element={<LoginScreen />} />
       <Route path="/register" element={<RegisterScreen />} />
+      <Route path="/privacypolicy" element={<PrivacyPolicy />} />
 
       <Route path="" element={<PrivateRoute />}>
         <Route path="/shipping" element={<ShippingScreen />} />
