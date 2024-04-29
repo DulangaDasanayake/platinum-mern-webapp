@@ -26,9 +26,10 @@ const ProductListScreen = () => {
     useDeleteProductMutation();
 
   const deleteHandler = async (id) => {
-    if (window.confirm("Are you sure you want to delete this product?")) {
+    if (window.confirm("Do you want to delete this product?")) {
       try {
         await deleteProduct(id);
+        toast.success("Product Deleted Successfully!");
         refetch();
       } catch (err) {
         toast.error(err?.data?.message || err.error);
@@ -37,10 +38,10 @@ const ProductListScreen = () => {
   };
 
   const createProductHandler = async () => {
-    if (window.confirm("Are you sure you want to create a new product?")) {
+    if (window.confirm("Do you want to create a new product?")) {
       try {
         await createProduct();
-        toast.success("Product Deleted Successfully!");
+        toast.success("Product Created Successfully!");
         refetch();
       } catch (err) {
         toast.error(err?.data?.message || err.error);
