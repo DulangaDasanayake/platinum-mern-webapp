@@ -15,19 +15,19 @@ Full-stack E-commerce web application built with the MERN stack(MongoDB,Express,
 
 ### Features
 
-✔️ Full featured shopping cart
-✔️ Product reviews and ratings system
-✔️ Top products carousel on main page
-✔️ Product pagination
-✔️ Product search feature
-✔️ User profile with orders
-✔️ Admin product management
-✔️ Admin user management
-✔️ Admin Order details page
-✔️ Mark orders as delivered option
-✔️ Checkout process (shipping, payment method, etc)
-✔️ PayPal / credit card integration
-✔️ Database seeder (products & users)
+- Full featured shopping cart
+- Product reviews and ratings system
+- Top products carousel on main page
+- Product pagination
+- Product search feature
+- User profile with orders
+- Admin product management
+- Admin user management
+- Admin Order details page
+- Mark orders as delivered option
+- Checkout process (shipping, payment method, etc)
+- PayPal / credit card integration
+- Database seeder (products & users)
 
 ### Used Technologies
 
@@ -56,8 +56,7 @@ Full-stack E-commerce web application built with the MERN stack(MongoDB,Express,
 - **Hosting:**
 
   - Render.com for deployment and hosting
-  - Web App Demo Link: not yet hosted;
-  - I'm Sending My Regards for the Render.com for providing free hosting feature.
+  - Web App Demo Link: http://novamart.onrender.com
 
 ### Installation
 
@@ -137,5 +136,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### Thanks Giving ❤️
 
-Thanks for npm package developers, render.com, paypal developers, react developers, node developers, vs code
+Thanks for Developers of npm, render.com, paypal, react, node, vs code
 vs code extension developers and every each developer that helped me out to finish this project...
