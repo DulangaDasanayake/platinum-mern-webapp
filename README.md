@@ -4,6 +4,8 @@ Remember to give me your generous ⭐ Thanks you so very much !!!
 
 Full-stack E-commerce web application built with the MERN stack(MongoDB,Express,React & Node), Bootstrap, Redux toolkit and hosted on Render.com Browse, shop, and checkout with ease! Stay alert for updates..
 
+<img src="readmedata/home.JPG" alt="Image Description" width="1280" height="720">
+
 ## Table of Contents
 
 - [Features](#features)
@@ -28,6 +30,8 @@ Full-stack E-commerce web application built with the MERN stack(MongoDB,Express,
 - Checkout process (shipping, payment method, etc)
 - PayPal / credit card integration
 - Database seeder (products & users)
+
+<img src="readmedata/product.JPG" alt="Image Description" width="1280" height="720">
 
 ### Used Technologies
 
