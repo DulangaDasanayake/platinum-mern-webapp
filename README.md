@@ -1,4 +1,4 @@
-# NovaMart - [MERN Stack]
+# Platiinum - [MERN Stack]
 
 Remember to give me your generous ⭐ Thanks you so very much !!!
 

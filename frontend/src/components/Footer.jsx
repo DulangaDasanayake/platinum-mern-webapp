@@ -9,7 +9,7 @@ const Footer = () => {
       <Container>
         <Row className='justify-content-center align-items-center'>
           <Col md={4} className='text-center'>
-            <h5>NovaMart &copy; {currentYear}</h5>
+            <h5>Platinum &copy; {currentYear}</h5>
             <ul className='list-inline mb-0'>
               <li className='list-inline-item'>
                 <Link to='/privacypolicy' className='text-light'>

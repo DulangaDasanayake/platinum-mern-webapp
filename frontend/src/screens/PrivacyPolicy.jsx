@@ -159,7 +159,7 @@ const PrivacyPolicy = () => {
           <p>
             If you have any questions or concerns about our Privacy Policy or
             the handling of your personal information, please contact us at{' '}
-            <a href='mailto:contact@novamart.com'>contact@novamart.com</a>.
+            <a href='mailto:contact@platinum.com'>contact@platinum.com</a>.
           </p>
         </li>
       </ol>
