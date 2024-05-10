@@ -6,6 +6,44 @@ Full-stack E-commerce web application built with the MERN stack(MongoDB,Express,
 
 <img src="readmedata/home.JPG" alt="Image Description" width="800" height="500">
 
+```javascript
+return (
+    <>
+      {!keyword ? (
+        <ProductCarousel />
+      ) : (
+        <Link to="/" className="btn btn-light mb-4">
+          Go Back
+        </Link>
+      )}
+      {isLoading ? (
+        <Loader />
+      ) : error ? (
+        <Message variant="danger">
+          {error?.data?.message || error.error}
+        </Message>
+      ) : (
+        <>
+          <h1>Latest Products</h1>
+          <Row>
+            {data.products.map((product) => (
+              <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
+                <Product product={product} />
+              </Col>
+            ))}
+          </Row>
+          <Paginate
+            pages={data.pages}
+            page={data.page}
+            keyword={keyword ? keyword : ""}
+          />
+        </>
+      )}
+    </>
+  );
+};
+```
+
 ## Table of Contents
 
 - [Features](#features)
