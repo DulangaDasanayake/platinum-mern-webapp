@@ -1,2 +1,4 @@
+Payment Test Credentials:
+
 sb-cttva30329454@personal.example.com
 Qc4#%Ae8
