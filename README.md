@@ -1,10 +1,48 @@
-# NovaMart - [MERN Stack]
+# [Platinum](novamart.onrender.com) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/facebook/react/blob/main/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://legacy.reactjs.org/docs/how-to-contribute.html#your-first-pull-request)
 
 Remember to give me your generous ⭐ Thanks you so very much !!!
 
 Full-stack E-commerce web application built with the MERN stack(MongoDB,Express,React & Node), Bootstrap, Redux toolkit and hosted on Render.com Browse, shop, and checkout with ease! Stay alert for updates..
 
 <img src="readmedata/home.JPG" alt="Image Description" width="800" height="500">
+
+```javascript
+return (
+    <>
+      {!keyword ? (
+        <ProductCarousel />
+      ) : (
+        <Link to="/" className="btn btn-light mb-4">
+          Go Back
+        </Link>
+      )}
+      {isLoading ? (
+        <Loader />
+      ) : error ? (
+        <Message variant="danger">
+          {error?.data?.message || error.error}
+        </Message>
+      ) : (
+        <>
+          <h1>Latest Products</h1>
+          <Row>
+            {data.products.map((product) => (
+              <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
+                <Product product={product} />
+              </Col>
+            ))}
+          </Row>
+          <Paginate
+            pages={data.pages}
+            page={data.page}
+            keyword={keyword ? keyword : ""}
+          />
+        </>
+      )}
+    </>
+  );
+};
+```
 
 ## Table of Contents
 
