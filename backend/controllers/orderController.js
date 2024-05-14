@@ -80,8 +80,7 @@ const getOrderById = asyncHandler(async (req, res) => {
 // @route   GET /api/orders/:id/pay
 // @access  Private
 const updateOrderToPaid = asyncHandler(async (req, res) => {
-  // need to verify the payment was made to PayPal before marking
-  // the order as paid
+  // need to verify the payment was made to PayPal before marking the order as paid
   const { verified, value } = await verifyPayPalPayment(req.body.id);
   if (!verified) throw new Error('Payment not verified');
 
@@ -91,6 +90,8 @@ const updateOrderToPaid = asyncHandler(async (req, res) => {
 
   const order = await Order.findById(req.params.id);
 
+  //if price that trying to pay was lower to real price this snippet will run
+  //and when paid message will show on order details
   if (order) {
     const paidCorrectAmount = order.totalPrice.toString() === value;
     if (!paidCorrectAmount) throw new Error('Incorrect amount paid');
@@ -118,6 +119,7 @@ const updateOrderToPaid = asyncHandler(async (req, res) => {
 const updateOrderToDelivered = asyncHandler(async (req, res) => {
   const order = await Order.findById(req.params.id);
 
+  //admin make an order as delevered
   if (order) {
     order.isDelivered = true;
     order.deliveredAt = Date.now();
