@@ -52,7 +52,7 @@ const ProfileScreen = () => {
   return (
     <Row className="justify-content-md-center">
       <Col md={userInfo.isAdmin ? 6 : 3}>
-      <h2>{userInfo.isAdmin ? 'Admin Profile' : 'User Profile'}</h2>
+      <h2>{userInfo.isAdmin ? 'Admin Profile' : 'User Profile'}</h2><br />
 
         <Form onSubmit={submitHandler}>
           <Form.Group className='my-2' controlId='name'>
