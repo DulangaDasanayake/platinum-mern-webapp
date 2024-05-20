@@ -57,6 +57,23 @@ const registerUser = asyncHandler(async (req, res) => {
     throw new Error(errorMessage);
   }
 
+  // Email validation - advanced
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    res.status(400);
+    throw new Error('Please provide a valid email address');
+  }
+
+  // Name validation - advanced
+  if (!name || typeof name !== 'string' || name.trim().length === 0) {
+    res.status(400);
+    throw new Error('Please provide a valid name');
+  }
+  if (/[\d!@#$%^&*()_+={}\[\]:";'<>?,.\/\\|`~]/.test(name)) {
+    res.status(400);
+    throw new Error('Name cannot contain numbers or symbols');
+  }
+
   const userExists = await User.findOne({ email });
 
   if (userExists) {

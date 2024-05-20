@@ -103,6 +103,7 @@ const ProductEditScreen = () => {
                 placeholder='Enter name'
                 value={name}
                 onChange={(e) => setName(e.target.value)}
+                required
               ></Form.Control>
             </Form.Group>
 
@@ -113,6 +114,7 @@ const ProductEditScreen = () => {
                 placeholder='Enter price'
                 value={price}
                 onChange={(e) => setPrice(e.target.value)}
+                required
               ></Form.Control>
             </Form.Group>
 
@@ -123,6 +125,7 @@ const ProductEditScreen = () => {
                 placeholder='Enter image url'
                 value={image}
                 onChange={(e) => setImage(e.target.value)}
+                required
               ></Form.Control>
               <Form.Control
                 label='Choose File'
@@ -139,6 +142,7 @@ const ProductEditScreen = () => {
                 placeholder='Enter brand'
                 value={brand}
                 onChange={(e) => setBrand(e.target.value)}
+                required
               ></Form.Control>
             </Form.Group>
 
@@ -149,6 +153,7 @@ const ProductEditScreen = () => {
                 placeholder='Enter countInStock'
                 value={countInStock}
                 onChange={(e) => setCountInStock(e.target.value)}
+                required
               ></Form.Control>
             </Form.Group>
 
@@ -159,6 +164,7 @@ const ProductEditScreen = () => {
                 placeholder='Enter category'
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
+                required
               ></Form.Control>
             </Form.Group>
 
@@ -169,6 +175,7 @@ const ProductEditScreen = () => {
                 placeholder='Enter description'
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
+                required
               ></Form.Control>
             </Form.Group>
 
