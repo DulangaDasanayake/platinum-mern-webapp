@@ -85,14 +85,11 @@ const Footer = () => {
           <Col className='sb__footer-copyright'>
             <p>Platinum &copy; {new Date().getFullYear()}</p>
           </Col>
-          <Col className='sb__footer-below-links text-end'>
-            <Link to='/'>
-              <p>Terms & Conditions</p>
-            </Link>
+          <Col className='sb__footer-below-links'>
             <Link to='/privacypolicy'>
               <p>Privacy</p>
             </Link>
-            <Link to='/'>
+            <Link to='/security'>
               <p>Security</p>
             </Link>
             <Link to='/'>
