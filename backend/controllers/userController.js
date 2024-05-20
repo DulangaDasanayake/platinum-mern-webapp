@@ -31,6 +31,32 @@ const authUser = asyncHandler(async (req, res) => {
 const registerUser = asyncHandler(async (req, res) => {
   const { name, email, password } = req.body;
 
+  // Password validation rules
+  const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
+
+  if (!passwordRegex.test(password)) {
+    res.status(400);
+    let errorMessage = 'Password must meet the following criteria:';
+
+    if (password.length < 8) {
+      errorMessage += '\n- At least 8 characters long';
+    }
+
+    if (!/(?=.*[a-z])/.test(password)) {
+      errorMessage += '\n- Contains at least one lowercase letter';
+    }
+
+    if (!/(?=.*[A-Z])/.test(password)) {
+      errorMessage += '\n- Contains at least one uppercase letter';
+    }
+
+    if (!/(?=.*\d)/.test(password)) {
+      errorMessage += '\n- Contains at least one number';
+    }
+
+    throw new Error(errorMessage);
+  }
+
   const userExists = await User.findOne({ email });
 
   if (userExists) {
