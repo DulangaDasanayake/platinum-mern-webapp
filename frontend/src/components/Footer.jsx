@@ -27,7 +27,7 @@ const Footer = () => {
               <p>Kandy: +94776584975</p>
             </Link>
             <Link to='/'>
-              <p>Colombo: +94776584975</p>
+              <p>Matara: +94776584975</p>
             </Link>
           </Col>
           <Col className='sb__footer-links_div'>
@@ -86,7 +86,7 @@ const Footer = () => {
         <hr />
         <Row className='sb__footer-below'>
           <Col className='sb__footer-copyright'>
-            <p>Platinum &copy; {new Date().getFullYear()}</p>
+            <p>Platinum &copy; {new Date().getFullYear()} All Rights Reserved.</p>
           </Col>
         </Row>
       </Container>

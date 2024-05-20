@@ -48,13 +48,13 @@
     }  
   
   .sb__footer-links_div h4 {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 17px;
     margin-bottom: 0.9rem;
   }
   
   .sb__footer-links_div p {
-    font-size: 12px;
+    font-size: 15px;
     line-height: 15px;
     margin: 0.5rem 0;
     cursor: pointer;
@@ -86,7 +86,7 @@
   }
   
   .sb__footer-copyright p {
-    font-size: 13px;
+    font-size: 16px;
     line-height: 15px;
     color: aliceblue;
     font-weight: 600;
