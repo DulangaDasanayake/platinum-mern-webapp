@@ -3,7 +3,7 @@ import { Table, Button } from 'react-bootstrap';
 import { FaTimes, FaTrash, FaEdit } from 'react-icons/fa';
 import Message from '../../components/Message';
 import Loader from '../../components/Loader';
-import { toast } from "react-toastify";
+import { toast } from 'react-toastify';
 import {
   useGetOrdersQuery,
   useDeleteOrderMutation,
@@ -47,6 +47,7 @@ const OrderListScreen = () => {
               <th>PAID ON</th>
               <th>DELIVERED ON</th>
               <th>DETAILS</th>
+              <th>DELETE</th>
             </tr>
           </thead>
           <tbody>
@@ -82,11 +83,6 @@ const OrderListScreen = () => {
                 </td>
 
                 <td>
-                  <LinkContainer to={`/admin/order/${order._id}/edit`}>
-                    <Button variant='light' className='btn-sm'>
-                      <FaEdit />
-                    </Button>
-                  </LinkContainer>
                   <Button
                     variant='danger'
                     className='btn-sm'
