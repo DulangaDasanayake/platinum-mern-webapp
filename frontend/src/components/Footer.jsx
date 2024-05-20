@@ -47,11 +47,14 @@ const Footer = () => {
           </Col>
           <Col className='sb__footer-links_div'>
             <h4>COMPANY</h4>
-            <Link to='/'>
+            <Link to='/aboutus'>
               <p>About Us</p>
             </Link>
-            <Link to='/'>
-              <p>Contact Us</p>
+            <Link to='/privacypolicy'>
+              <p>Privacy</p>
+            </Link>
+            <Link to='/security'>
+              <p>Security</p>
             </Link>
           </Col>
           <Col className='sb__footer-links_div'>
@@ -84,17 +87,6 @@ const Footer = () => {
         <Row className='sb__footer-below'>
           <Col className='sb__footer-copyright'>
             <p>Platinum &copy; {new Date().getFullYear()}</p>
-          </Col>
-          <Col className='sb__footer-below-links'>
-            <Link to='/privacypolicy'>
-              <p>Privacy</p>
-            </Link>
-            <Link to='/security'>
-              <p>Security</p>
-            </Link>
-            <Link to='/'>
-              <p>Cookies</p>
-            </Link>
           </Col>
         </Row>
       </Container>
