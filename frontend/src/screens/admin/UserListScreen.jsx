@@ -53,7 +53,7 @@ const UserListScreen = () => {
                 <td>{user._id}</td>
                 <td>{user.name}</td>
                 <td>
-                  <a href={`mailto:${user.email}`}>{user.email}</a>
+                  <a href={`mailto:${user.email}`} style={{ color: "black" }}>{user.email}</a>
                 </td>
                 <td>
                   {user.isAdmin ? (
