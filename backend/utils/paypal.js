@@ -43,17 +43,21 @@ export async function checkIfNewTransaction(orderModel, paypalTransactionId) {
   }
 }
 
-export async function verifyPayPalPayment(paypalTransactionId) {
-  const accessToken = await getPayPalAccessToken();
-  const paypalResponse = await fetch(
-    `${PAYPAL_API_URL}/v2/checkout/orders/${paypalTransactionId}`,
-    {
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${accessToken}`,
-      },
-    }
-  );
+// Validate the transaction ID format (e.g., using regex)
+if (!/^[a-zA-Z0-9_-]+$/.test(paypalTransactionId)) {
+  throw new Error('Invalid PayPal transaction ID');
+}
+
+const paypalResponse = await fetch(
+  `${PAYPAL_API_URL}/v2/checkout/orders/${paypalTransactionId}`,
+  {
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${accessToken}`,
+    },
+  }
+);
+
   if (!paypalResponse.ok) throw new Error('Failed to verify payment');
 
   const paypalData = await paypalResponse.json();
